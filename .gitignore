@@ -1,0 +1,5 @@
+/.idea
+bin
+obj
+coverage.xml.zip
+coverage.xml
