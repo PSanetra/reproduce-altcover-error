@@ -6,4 +6,5 @@ WORKDIR /src/SimpleAppTests
 
 RUN rm -rf bin obj ../SimpleApp/bin ../SimpleApp/obj
 RUN dotnet restore
-RUN dotnet test /p:AltCover=true /p:AltCoverCobertura=coverage.xml /p:CopyLocalLockFileAssemblies="true"
+RUN dotnet test /p:AltCover=true /p:AltCoverCobertura=cobertura.xml /p:CopyLocalLockFileAssemblies="true"
+RUN stat cobertura.xml
